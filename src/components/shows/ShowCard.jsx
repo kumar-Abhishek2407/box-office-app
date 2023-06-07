@@ -11,7 +11,7 @@ const ShowCard = ({ name, image, id, summary }) => {
       <h4>{name}</h4>
       <p>{summaryStripped}</p>
       <div>
-        <Link to="/">Read More</Link>
+        <Link to={`/show/${id}`}>Read More</Link>
         <button type="button">Star me</button>
       </div>
     </div>
