@@ -27,11 +27,11 @@ import Cast from '../components/shows/Cast';
 //   return { showData, showError };
 // };
 const Show = () => {
-  const { showId } = useParams();
+  const { id } = useParams();
   // const { showData, showError } = useShowById(showId);
   const { data: showData, error: showError } = useQuery({
-    queryKey: ['show', showId],
-    queryFn: () => getShowById(showId),
+    queryKey: ['show', id],
+    queryFn: () => getShowById(id),
     refetchOnWindowFocus: false,
   });
 

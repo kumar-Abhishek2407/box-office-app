@@ -15,8 +15,8 @@ function App() {
           <Route element={<MainLayout />}>
             <Route path="/" element={<Home />} />
             <Route path="/starred" element={<Starred />} />
-            <Route path="/show/:showId" element={<Show />} />
           </Route>
+          <Route path="/show/:id" element={<Show />} />
           <Route path="*" element={<div>Not Found</div>} />
 
           {/* <Route path="/" element={<App />}>
