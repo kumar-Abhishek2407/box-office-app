@@ -1,4 +1,4 @@
-const Cast = cast => {
+const Cast = ({ cast }) => {
   return (
     <div>
       {cast.map(({ person, character, voice }) => (

@@ -71,7 +71,7 @@ const Show = () => {
 
         <div>
           <h2>Seasons</h2>
-          <Seasons Seasons={showData._embedded.seasons} />
+          <Seasons seasons={showData._embedded.seasons} />
         </div>
 
         <div>

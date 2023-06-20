@@ -7,8 +7,7 @@ const usePersistedReducer = (reducer, initialState, localStorageKey) => {
 
   useEffect(() => {
     localStorage.setItem(localStorageKey, JSON.stringify(state));
-  }),
-    [state, localStorageKey];
+  }, [state, localStorageKey]);
 
   return [state, dispatch];
 };
