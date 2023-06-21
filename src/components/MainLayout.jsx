@@ -6,7 +6,10 @@ const MainLayout = () => {
   return (
     <div>
       {/* <AppTitle />    pass props just like arguments in function */}
-      <AppTitle title="helo" subtitle="world" />
+      <AppTitle
+        title="BOX OFFICE"
+        subtitle="Are you looking for a movie or an actor?"
+      />
       <Navs />
 
       <Outlet />
